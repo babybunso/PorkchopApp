@@ -39,7 +39,7 @@ public class PieGraphBase extends Activity {
 
 		
 		
-		mChartView = g.getPieChartView(this, pies, "Title", true, true);
+		mChartView = g.getPieChartView(this, pies, "Title", true, false, true, true);
 		
 		mChartView.setOnClickListener(new View.OnClickListener() {
 			@Override

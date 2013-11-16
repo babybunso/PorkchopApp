@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 /**
  * @author Digify-Ray
@@ -24,6 +25,14 @@ import android.widget.LinearLayout;
  */
 public class PagesFragment extends Fragment {
 	
+	private static final String BY_REGION = "By Region";
+
+	private static final String BY_SECTOR = "By Sector";
+
+	private static final String BY_RECIPIENT_UNIT = "By Recipient Unit";
+
+	private static final String BY_EXPENSE_CLASS = "By Expense Class";
+
 	private static final String TAG = PagesFragment.class.getSimpleName();
 
 	public static final String KEY_EXPENSE_CLASS = "ph.kabantayngbayan.porkchop.BY_EXPENSE_CLASS";
@@ -66,25 +75,54 @@ public class PagesFragment extends Fragment {
 			pies.add(p);
 			
 			mChartViewExpenseClass = new GraphManager().getPieChartView(getActivity(), 
-					(expenseClass.size()>0) ? expenseClass : pies, "By Expense Class", false, false);
+					(expenseClass.size()>0) ? expenseClass : pies, BY_EXPENSE_CLASS, false, false, false, false);
 			mChartViewRecipientUnit = new GraphManager().getPieChartView(getActivity(), 
-					(recipientUnits.size()>0) ? recipientUnits : pies, "By Recipient Unit", false, false);
+					(recipientUnits.size()>0) ? recipientUnits : pies, BY_RECIPIENT_UNIT, false, false, false, false);
 			mChartViewSector = new GraphManager().getPieChartView(getActivity(), 
-					(sectors.size()>0) ? sectors : pies, "By Sector", false, false);
+					(sectors.size()>0) ? sectors : pies, BY_SECTOR, false, false, false, false);
 			mChartViewRegion = new GraphManager().getPieChartView(getActivity(), 
-					(regions.size()>0) ? regions : pies, "By Region", false, false);
+					(regions.size()>0) ? regions : pies, BY_REGION, false, false, false, false);
 		
 			
 		} else {
 			PieChartModel p = new PieChartModel("NO DATA", -1);
 			pies.add(p);
 			
-			mChartViewExpenseClass = new GraphManager().getPieChartView(getActivity(), pies, "By Expense Class", false, false);
-			mChartViewRecipientUnit = new GraphManager().getPieChartView(getActivity(), pies, "By Recipient Unit", false, false);
-			mChartViewSector = new GraphManager().getPieChartView(getActivity(), pies, "By Sector", false, false);
-			mChartViewRegion = new GraphManager().getPieChartView(getActivity(), pies, "By Region", false, false);
+			mChartViewExpenseClass = new GraphManager().getPieChartView(getActivity(), pies, BY_EXPENSE_CLASS, false, false, false, false);
+			mChartViewRecipientUnit = new GraphManager().getPieChartView(getActivity(), pies, BY_RECIPIENT_UNIT, false, false, false, false);
+			mChartViewSector = new GraphManager().getPieChartView(getActivity(), pies, BY_SECTOR, false, false, false, false);
+			mChartViewRegion = new GraphManager().getPieChartView(getActivity(), pies, BY_REGION, false, false, false, false);
 
 		}
+		
+		mChartViewExpenseClass.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(getActivity(), BY_EXPENSE_CLASS, Toast.LENGTH_LONG).show();
+			}
+		});
+		
+		mChartViewRecipientUnit.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(getActivity(), BY_RECIPIENT_UNIT, Toast.LENGTH_LONG).show();
+			}
+		});
+
+		mChartViewSector.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(getActivity(), BY_SECTOR, Toast.LENGTH_LONG).show();
+			}
+		});
+		
+		mChartViewRegion.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(getActivity(), BY_REGION, Toast.LENGTH_LONG).show();
+			}
+		});
+
 		
 		layoutPieExpenseClass.addView(mChartViewExpenseClass, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
 		layoutPieSaro.addView(mChartViewRecipientUnit, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
