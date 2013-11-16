@@ -1,0 +1,35 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "year": "2009",
+      "gaa_total": "1,415,000,000",
+      "new_appro_total": "1,170,318,753",
+      "id": "5279efb55e13db3c5fb30bba"
+    },
+    {
+      "year": "2010",
+      "gaa_total": "1,541,000,000",
+      "new_appro_total": "1,304,406,400",
+      "id": "5279efb55e13db3c5fb30bbb"
+    },
+    {
+      "year": "2011",
+      "gaa_total": "1,645,000,000",
+      "new_appro_total": "1,000,387,764",
+      "id": "5279efb55e13db3c5fb30bbc"
+    },
+    {
+      "year": "2012",
+      "gaa_total": "1,816,000,000",
+      "new_appro_total": "1,245,193,270",
+      "id": "5279efb55e13db3c5fb30bbd"
+    },
+    {
+      "year": "2013",
+      "gaa_total": "2,005,900,000",
+      "new_appro_total": "1,368,229,156",
+      "id": "5279efb55e13db3c5fb30bbe"
+    }
+  ]
+}

@@ -1,0 +1,1555 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "year": "2009",
+      "owner_code": "",
+      "department_code": "",
+      "agency_type": "",
+      "owner_desc": "",
+      "department_desc": "",
+      "programs": [
+        {
+          "program_desc": "",
+          "area_code": "",
+          "area_desc": "",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b484"
+    },
+    {
+      "year": "2009",
+      "owner_code": "SP",
+      "department_code": "CONGRESS",
+      "agency_type": "AGENCY",
+      "owner_desc": "Senate",
+      "department_desc": "Congress of the Philippines",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General management and supervision",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": "33016",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Productivity Incentive Benefits",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Legislative Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "29597",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Locally-Funded Projects",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements for the Congressional Commission on Agricultural Modernization",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Oversight Committee on Labor and Employment",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Power Commission",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on E-Commerce",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements for the Legislative Oversight Committee to Monitor and Oversee the Implementation of the RP-US Visiting Forces Agreement",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Oversight Committee on Ecological Solid Waste Management",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Oversight Committee on the Clean Air Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Comprehensive Oversight Committee on the Comprehensive Tax Reform Program",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Committee on Absentee Voting Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Oversight Committee on Anti-Money Laundering",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Oversight Committee on the Dangerous Drugs Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Joint Congressional Oversight Committee on the Philppine Clean Water Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Oversight Committee on the Optical Media Board",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Oversight Committee on Bio-Fuel Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Oversight Committee on the Official Development Assistance",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Commission on Science and Technology and Engineering",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Congressional Oversight Committee on Civil Aviation",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Preparatory ActivitiesStudy for Building Construction",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b485"
+    },
+    {
+      "year": "2009",
+      "owner_code": "SET",
+      "department_code": "CONGRESS",
+      "agency_type": "SUBAGENCY",
+      "owner_desc": "Senate Electoral Tribunal",
+      "department_desc": "Congress of the Philippines",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General management and supervision",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "1571",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "For Adjudication of Electoral Contests Involving Members of the Senate Including Administrative Support",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "3092",
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b486"
+    },
+    {
+      "year": "2009",
+      "owner_code": "CA",
+      "department_code": "CONGRESS",
+      "agency_type": "AGENCY",
+      "owner_desc": "Commission on Appointments",
+      "department_desc": "Congress of the Philippines",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General management and supervision",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "4508",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Review or Confirmation of Appointments Submitted to the Commission",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "4280",
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b487"
+    },
+    {
+      "year": "2009",
+      "owner_code": "HR",
+      "department_code": "CONGRESS",
+      "agency_type": "AGENCY",
+      "owner_desc": "House of Representatives",
+      "department_desc": "Congress of the Philippines",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General management and supervision",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "59893",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Productivity Incentive Benefits",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Legislative Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "57845",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Gender and development",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Locally-Funded Project",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee for the Legislative Commission on Asian Political and Economic Ingtegration",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Dangerous Drugs",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Anti-Money Laundering",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Power Commission",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements for the Legislative Oversight Committee to Monitor and Oversee the Implementation of the RP-US Visiting Forces Agreement",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements for the Congressional Oversight Committee on Official Development Assistance",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Comprehensive Tax Reform Program",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Oversight Committee on the Clean Air Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Anti-Dumping",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on the Optical Media Board",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Biofuels",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Absentee Voting",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Agricultural and Fisheries Modernization",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Oversight Committee on Civil Aviation",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Oversight Committee on Ecological Solid Waste Management",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Oversight Committee on the Philippine Clean Water Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Safeguard Measures Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Universally-Accessible Cheaper and Quality Medicines Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Magna Carta for Micro Small and Medium Enterprises",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Oversight Committee on Automated Election System",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Joint Congressional Oversight Committee on Human Security Act",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on the Physical Examination of Imported Articles",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational Requirements of the Congressional Oversight Committee on Credit Information System",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b488"
+    },
+    {
+      "year": "2009",
+      "owner_code": "HET",
+      "department_code": "CONGRESS",
+      "agency_type": "SUBAGENCY",
+      "owner_desc": "House Electoral Tribunal",
+      "department_desc": "Congress of the Philippines",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General management and supervision",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "1917",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Productivity Incentive Benefits",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Adjudication of Electoral Contests involving Members of the House of Representatives",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "3128",
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b489"
+    },
+    {
+      "year": "2009",
+      "owner_code": "OVP",
+      "department_code": "OVP",
+      "agency_type": "DEPARTMENT",
+      "owner_desc": "Office of the Vice-President",
+      "department_desc": "Office of the Vice-President",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Management and Supervision",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": "773",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Productivity Incentive Benefits",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operation",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Ceremonial Functions and Technical Services",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Ceremonial functions and technical services including P6000000 for confidential and intelligence expenses to be released upon approval of the President",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": "1541",
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b48b"
+    },
+    {
+      "year": "2009",
+      "owner_code": "ACPC",
+      "department_code": "DA",
+      "agency_type": "AGENCY",
+      "owner_desc": "Agricultural Credit Policy Council",
+      "department_desc": "Department of Agriculture",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Management and Supervision",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "308",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Synchronization and Coordination of Agricultural Credit and Other Finance Policies and Programs",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Policy Development and Planning",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "670",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Administration of Comprehensive Agricultural Loan Fund (CALF)",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "176",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "AMCFP Implementation",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Employment Facilitation",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Promotion of Local Employment Facilitation Employment Guidance and Regulatory Program",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b48e"
+    },
+    {
+      "year": "2009",
+      "owner_code": "BUPHIRE",
+      "department_code": "DA",
+      "agency_type": "AGENCY",
+      "owner_desc": "Bureau of Post-Harvest Research and Extension",
+      "department_desc": "Department of Agriculture",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Management and Supervision",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "1125",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Productivity Incentive Benefits",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Support to Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Policy Formulation and Planning Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Policy formulation and planning services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "464",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Generation and Dissemination of Post-Harvest Technologies for Grains and Commercial Crops",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Generation and dissemination of post-harvest technologies for grains and commercial crops",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "2126",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Locally-Funded Project (s)",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Purchase of Feed Mill and Furnace (Biomass)",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b490"
+    },
+    {
+      "year": "2009",
+      "owner_code": "OP-PROPER",
+      "department_code": "OP",
+      "agency_type": "AGENCY",
+      "owner_desc": "The President's Offices",
+      "department_desc": "Office of the President",
+      "programs": [
+        {
+          "program_desc": "General Administration and Support",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General Administration and Support Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "General management and supervision including P150000000 for confidential and intelligence expenses to be released upon approval of the President",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "13314",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Maintenance and operation of Malacanang grounds and facilities including guesthouses",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "3168",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operations",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Advisory and Consultative Council",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Advisory and consultative council",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "1115",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Professional technical and expert services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Public Assistance Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational requirements of the Presidential Action Center",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "1142",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Conduct of Special Missions",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Conduct of special missions as may be directed  by the President",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Provision for localforeign visit of the President",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Provision of Presidential Escort Civilian and Aide-de-Camp Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Provision of presidential escortcivilian and aide-de-camp services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Clinical Services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Operational requirements for clinical services",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Locally-Funded Projects",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "RepairMaintenance Purchase of Air Transportation Equipment",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Mindanao Economic Development Council",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "48",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Office of North Luzon Quadrangle Area",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Office of the Presidential Adviser on the Peace Process",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Office of External Affairs",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Presidential Anti-Graft Commission",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Presidential Anti-Organized Crime Commission",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Presidential Anti-Organized Crime Commission Proper including P500000000 for confidential and intelligence expenses to be released upon approval of the President",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": "1021",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Office of the Special Envoy on Transnational Crime",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Philippine Center on Transnational Crime",
+          "area_code": "140",
+          "area_desc": "Nationwide",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "National Anti-Environment Crime Task Force",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Presidential Visiting Forces Agreement Commission",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Commission on Information and Communications Technology",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Office of the Chairman",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": "819",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "National Computer Center",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": "4787",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Telecommunications Office",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": "72882",
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "EDSA People Power Commission",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Minerals Development Council",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Commission on Maritime and Ocean Affairs",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Presidential Anti-Smuggling Group",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Luzon Urban Beltway Super Region",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Bicol River Basin Watershed Management Project",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Office of the Presidential Adviser on Global Warming and Climate Change",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        },
+        {
+          "program_desc": "Office of the Presidential Adviser for New Government Centers",
+          "area_code": "0",
+          "area_desc": "CO",
+          "budget": {
+            "ps": 0,
+            "mooe": 0,
+            "co": 0
+          }
+        }
+      ],
+      "id": "5279e3205e13db275f70b48a"
+    }
+  ]
+}
