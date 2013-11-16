@@ -6,9 +6,12 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import ph.gov.kabantayngbayan.porkchop.db.DBHelper;
+import ph.gov.kabantayngbayan.porkchop.db.SaroDataSource;
 import ph.gov.kabantayngbayan.porkchop.db.TotalDataSource;
 import ph.gov.kabantayngbayan.porkchop.models.Polygon;
 import ph.gov.kabantayngbayan.porkchop.models.Region;
+import ph.gov.kabantayngbayan.porkchop.models.Saro;
 import ph.gov.kabantayngbayan.porkchop.models.Total;
 import ph.gov.kabantayngbayan.porkchop.utils.ByCategoryDataUtil;
 import ph.gov.kabantayngbayan.porkchop.utils.ColorUtil;
@@ -40,10 +43,10 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-public class MainActivity extends FragmentActivity implements OnClickListener{
-	
+public class MainActivity extends FragmentActivity implements OnClickListener {
+
 	LinearLayout layMenuItems;
-	
+
 	/**
 	 * Constants
 	 */
@@ -58,39 +61,39 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	 */
 	public ArrayList<Region> mRegions = new ArrayList<Region>();
 	public PagerAdapter mPagerAdapter;
-	
-	/** 
+
+	/**
 	 * Views
 	 */
 	private GoogleMap mMap;
 	private ViewPager mPager;
 	private List<Total> totals;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		initializeViews();
 		byCategory = new ByCategoryDataUtil(this);
-		
+
 		setUpTotalsBudget();
 		setUpMapIfNeeded();
 		setUpViewPager();
 	}
-	
+
 	private void setUpTotalsBudget() {
 		TotalDataSource totalDataSource = new TotalDataSource(MainActivity.this);
-		totalDataSource.open();			
+		totalDataSource.open();
 		totals = totalDataSource.getAll();
 		totalDataSource.close();
 	}
 
-	private void setUpViewPager() { 
+	private void setUpViewPager() {
 		mPager = (ViewPager) findViewById(R.id.pager);
 		mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
 		mPager.setAdapter(mPagerAdapter);
 	}
-	
+
 	private void initializeViews() {
 		layMenuItems = (LinearLayout) findViewById(R.id.lay_menu_items);
 		findViewById(R.id.img_menu).setOnClickListener(this);
@@ -100,7 +103,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		findViewById(R.id.img_budget101).setOnClickListener(this);
 		findViewById(R.id.img_about).setOnClickListener(this);
 	}
-	
+
 	/**
 	 * Initialize map
 	 */
@@ -115,7 +118,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 				centerMap(CENTER_PHILIPPINES, ZOOM_LEVEL_PLACE);
 
 				// enable my location to get current location
-				//mMap.setMyLocationEnabled(true);
+				// mMap.setMyLocationEnabled(true);
 			}
 		}
 
@@ -127,11 +130,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 						Toast.LENGTH_SHORT).show();
 			}
 		});
-		
+
 		parseJson();
 		plotPolygons();
 	}
-	
+
 	/**
 	 * Center the map into a specific place and then set the zoom to zoomLevel
 	 * 
@@ -148,7 +151,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));
 		}
 	}
-	
+
 	/**
 	 * Plot the Polygon layers over Google Map
 	 */
@@ -162,12 +165,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 						.addAll(Region.getCoordinates(p)).fillColor(color)
 						.strokeWidth(0.1f));
 			}
-			if (index < ColorUtil.COLORS.length-1) {
+			if (index < ColorUtil.COLORS.length - 1) {
 				index++;
-			} else { 
+			} else {
 				index = 0;
 			}
-			
+
 		}
 
 	}
@@ -204,6 +207,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
 	/**
 	 * Gets the region name associated with the point specified on the map
+	 * 
 	 * @param point
 	 * @return
 	 */
@@ -221,6 +225,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
 	/**
 	 * Checks if the point is within or inside the polygon given the vertices
+	 * 
 	 * @param tap
 	 * @param vertices
 	 * @return
@@ -237,7 +242,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	}
 
 	/**
-	 * Checks if the casted ray intersects any ray, use for point-inside-polygon checking
+	 * Checks if the casted ray intersects any ray, use for point-inside-polygon
+	 * checking
+	 * 
 	 * @param tap
 	 * @param vertA
 	 * @param vertB
@@ -263,34 +270,39 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
 		return x > pX;
 	}
-	
+
 	/**
-	 * Pager Adapter for ViewPager
-	 * SARO Details
+	 * Pager Adapter for ViewPager SARO Details
+	 * 
 	 * @author Digify-Ray
-	 *
+	 * 
 	 */
 	public class PagerAdapter extends FragmentPagerAdapter {
-		
+
 		public PagerAdapter(FragmentManager fm) {
 			super(fm);
 		}
 
 		@Override
 		public Fragment getItem(int position) {
-			// TODO: Create initialization for PagesFragment, supply a year to the fragment maybe?
+			// TODO: Create initialization for PagesFragment, supply a year to
+			// the fragment maybe?
 			PagesFragment pf = new PagesFragment();
 			Bundle bundle = new Bundle();
-			
+
 			String year = totals.get(position).getYear();
 
-			bundle.putSerializable(PagesFragment.KEY_EXPENSE_CLASS, (Serializable) byCategory.getExpenseClass(year));
-			bundle.putSerializable(PagesFragment.KEY_REGION, (Serializable) byCategory.getRegions(year));
-			bundle.putSerializable(PagesFragment.KEY_RECIPIENT_UNIT, (Serializable) byCategory.getRecipientUnits(year));
-			bundle.putSerializable(PagesFragment.KEY_SECTOR, (Serializable) byCategory.getSectors(year));
+			bundle.putSerializable(PagesFragment.KEY_EXPENSE_CLASS,
+					(Serializable) byCategory.getExpenseClass(year));
+			bundle.putSerializable(PagesFragment.KEY_REGION,
+					(Serializable) byCategory.getRegions(year));
+			bundle.putSerializable(PagesFragment.KEY_RECIPIENT_UNIT,
+					(Serializable) byCategory.getRecipientUnits(year));
+			bundle.putSerializable(PagesFragment.KEY_SECTOR,
+					(Serializable) byCategory.getSectors(year));
 
 			pf.setArguments(bundle);
-			
+
 			return pf;
 		}
 
@@ -298,13 +310,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		public int getCount() {
 			// TODO: Change this to number of years to be presented
 			return totals.size();
-		} 
-		
+		}
+
 		@Override
 		public CharSequence getPageTitle(int position) {
-//			int year = 2013; 
-//			year = year - position;
-//			return Integer.toString(year);
+			// int year = 2013;
+			// year = year - position;
+			// return Integer.toString(year);
 			return totals.get(position).getYear();
 		}
 	}
@@ -327,36 +339,83 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		
+
 		switch (v.getId()) {
-		
-			case R.id.img_menu:
-				layMenuItems.setVisibility(layMenuItems.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
-				break;
-				
-			case R.id.img_diy:
-				Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG).show();
-				Intent i  = new Intent(this, BudgetReleaseActivity.class);
-				startActivity(i);
-				break;
-			
-			case R.id.img_saob:
-				Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG).show();
-				break;
-				
-			case R.id.img_budgetrelease:
-				Toast.makeText(getApplicationContext(), "BUDGETRELEASE", Toast.LENGTH_LONG).show();
-				break;
-			case R.id.img_budget101:
-				Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG).show();
-				break;
-				
-			case R.id.img_about:
-				Toast.makeText(getApplicationContext(), "ABOUT", Toast.LENGTH_LONG).show();
-				break;
-		
+
+		case R.id.img_menu:
+			layMenuItems
+					.setVisibility(layMenuItems.getVisibility() == View.VISIBLE ? View.GONE
+							: View.VISIBLE);
+			break;
+
+		case R.id.img_diy:
+			Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG)
+					.show();
+			Intent i = new Intent(this, BudgetReleaseActivity.class);
+			startActivity(i);
+			break;
+
+		case R.id.img_saob:
+			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG)
+					.show();
+			Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+			intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+			startActivityForResult(intent, 0);
+			break;
+
+		case R.id.img_budgetrelease:
+			Toast.makeText(getApplicationContext(), "BUDGETRELEASE",
+					Toast.LENGTH_LONG).show();
+			break;
+		case R.id.img_budget101:
+			Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG)
+					.show();
+			break;
+
+		case R.id.img_about:
+			Toast.makeText(getApplicationContext(), "ABOUT", Toast.LENGTH_LONG)
+					.show();
+			break;
+
 		}
-		
+
+	}
+
+	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		if (requestCode == 0) {
+			if (resultCode == RESULT_OK) {
+				String contents = intent.getStringExtra("SCAN_RESULT");
+				String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
+
+				ArrayList<Saro> items = new ArrayList<Saro>();
+				SaroDataSource saroSource = new SaroDataSource(
+						getApplicationContext());
+				saroSource.open();
+				items = (ArrayList<Saro>) saroSource
+						.getByParameter(DBHelper.COL_TBL_SARO_BARCODE_NO + "='"
+								+ contents + "'");
+				saroSource.close();
+
+				Intent i = new Intent();
+				Bundle b = new Bundle();
+				if (items.size() == 1) {
+					Saro saro = items.get(0);
+					b.putSerializable("saro", saro);
+					i.putExtras(b);
+					i.setClass(MainActivity.this,
+							BudgetReleaseDetailsActivity.class);
+					startActivity(i);
+				} else {
+					Toast.makeText(getApplicationContext(),
+							"No SARO Found for Barcode " + contents,
+							Toast.LENGTH_LONG).show();
+				}
+
+				// Handle successful scan
+			} else if (resultCode == RESULT_CANCELED) {
+				// Handle cancel
+			}
+		}
 	}
 
 }

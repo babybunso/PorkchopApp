@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/sample_bg_02" >
+    android:background="@drawable/sample_bg_02"
+    android:orientation="vertical" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -23,34 +23,52 @@
             android:textColor="#000000" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/img_qrcode"
+    <ScrollView
+        android:id="@+id/scroll_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/agency_commission_on_audit" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/img_qrcode"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/linearLayout1"
-        android:padding="10dp" >
-
-        <TextView
-            android:id="@+id/txt_budget_amount"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:padding="10dp" >
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_budget_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RatingBar
+                android:id="@+id/ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_budget_amount"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/sharefb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratings"
+                android:layout_centerHorizontal="true"
+                android:text="Share to Facebook" />
+
+            <ImageView
+                android:id="@+id/img_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:layout_below="@id/sharefb"
+                android:src="@drawable/agency_commission_on_audit" />
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
