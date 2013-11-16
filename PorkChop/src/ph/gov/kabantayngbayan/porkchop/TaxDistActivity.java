@@ -8,6 +8,8 @@ import java.util.List;
 
 import ph.gov.kabantayngbayan.porkchop.db.SectorDatasource;
 import ph.gov.kabantayngbayan.porkchop.models.Particular;
+import ph.gov.kabantayngbayan.porkchop.models.PieChartModel;
+import ph.gov.kabantayngbayan.porkchop.utils.ByCategoryDataUtil;
 import ph.gov.kabantayngbayan.porkchop.utils.VerticalSeekBar;
 import android.app.Activity;
 import android.os.Bundle;
@@ -147,11 +149,59 @@ public class TaxDistActivity extends Activity {
 	private String getExpenseString(int amount) {
 		StringBuilder sBuilder = new StringBuilder();
 
+		ByCategoryDataUtil data = new ByCategoryDataUtil(
+				getApplicationContext());
+		List<PieChartModel> models = data.getExpenseClass("2013");
+
+		sBuilder.append("TAX BY EXPENSE CLASS \n\n");
+
+		double total = 0.0;
+
+		for (PieChartModel model : models) {
+			total += model.getValue();
+		}
+
+		for (PieChartModel model : models) {
+			sBuilder.append(model.getCategory());
+			sBuilder.append(" (");
+			double percent = model.getValue() / total;
+			sBuilder.append(percent);
+			sBuilder.append("% ): ");
+			DecimalFormat format = new DecimalFormat("00.00");
+			double tots = amount * percent;
+			sBuilder.append(format.format(tots));
+			sBuilder.append("\n");
+		}
+
 		return sBuilder.toString();
 	}
 
 	private String getAgencyString(int amount) {
 		StringBuilder sBuilder = new StringBuilder();
+
+		ByCategoryDataUtil data = new ByCategoryDataUtil(
+				getApplicationContext());
+		List<PieChartModel> models = data.getRecipientUnits("2013");
+
+		sBuilder.append("TAX BY RECIPIENT UNITS \n\n");
+
+		double total = 0.0;
+
+		for (PieChartModel model : models) {
+			total += model.getValue();
+		}
+
+		for (PieChartModel model : models) {
+			sBuilder.append(model.getCategory());
+			sBuilder.append(" (");
+			double percent = model.getValue() / total;
+			sBuilder.append(percent);
+			sBuilder.append("% ): ");
+			DecimalFormat format = new DecimalFormat("00.00");
+			double tots = amount * percent;
+			sBuilder.append(format.format(tots));
+			sBuilder.append("\n");
+		}
 
 		return sBuilder.toString();
 	}
