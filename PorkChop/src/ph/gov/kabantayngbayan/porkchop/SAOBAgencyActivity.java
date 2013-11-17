@@ -26,9 +26,9 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class BudgetReleaseActivity extends Activity{
+public class SAOBAgencyActivity extends Activity{
 	
-	//SARO REGION
+	//SAOB AGENCY
 	
 	ImageView imgMap;
 	GridView gridView;
@@ -38,17 +38,15 @@ public class BudgetReleaseActivity extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_saro_region);
+		setContentView(R.layout.activity_saob_agency);
 		initialize();
 	}
 	
 	
 	
 	private void initialize() {
-		imgMap = (ImageView) findViewById(R.id.img_map);
 		gridView = (GridView) findViewById(R.id.gridview);
 		int region = getIntent().getIntExtra("region", R.drawable.region_05);
-		imgMap.setImageResource(region);
 		setList();
 	}
 	
@@ -75,13 +73,15 @@ public class BudgetReleaseActivity extends Activity{
 	//TODO transfer to SARODETAILS
 	private ArrayList<AgencyItem> getSaroRegion() {
 		
-		SaroDataSource saroSource = new SaroDataSource(getApplicationContext());
-		saroSource.open();
-		saroSource.getByParameter(DBHelper.COL_TBL_SARO_REGION+"=''");
-		saroSource.close();
+		SaobDataSource saobSource = new SaobDataSource(getApplicationContext());
+		saobSource.open();
+		saobSource.getByParameter(DBHelper.COL_TBL_SAOB_BUDGET_OBLIG_TOTAL);
+		saobSource.close();
 		return null;
 	
 	}
+	
+	
 	
 	
 	private class BudgetReleaseListAdapter extends ArrayAdapter<AgencyItem> implements OnItemClickListener, Filterable {
@@ -125,7 +125,7 @@ public class BudgetReleaseActivity extends Activity{
              public AgencyItem agencyItem;
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(BudgetReleaseActivity.this, BudgetAgencyActivity.class);
+				Intent i = new Intent(SAOBAgencyActivity.this, SAOBActivity.class);
 				i.putExtra("agencyImage", agencyItem.getImage());
 				i.putExtra("agencyName", agencyItem.getName());
 				startActivity(i);

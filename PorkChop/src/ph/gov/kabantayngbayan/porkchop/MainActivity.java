@@ -342,7 +342,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			
 			case R.id.img_saob:
 				Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG).show();
-				Intent k  = new Intent(this, SAOBActivity.class);
+				Intent k  = new Intent(this, SAOBAgencyActivity.class);
 				startActivity(k);
 				break;
 				
