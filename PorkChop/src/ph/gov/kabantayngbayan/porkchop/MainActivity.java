@@ -353,12 +353,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 		case R.id.img_diy:
 			Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG).show();
-			Intent i = new Intent(this, BudgetReleaseActivity.class);
-=======
-			Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG)
-					.show();
 			i = new Intent(this, DIYActivity.class);
->>>>>>> branch_mon
+
 			startActivity(i);
 			break;
 
@@ -371,7 +367,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 		case R.id.img_budgetrelease:
 			Toast.makeText(getApplicationContext(), "BUDGETRELEASE", Toast.LENGTH_LONG).show();
-=======
+
 			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG)
 					.show();
 			i = new Intent("com.google.zxing.client.android.SCAN");
@@ -379,12 +375,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			startActivityForResult(i, 0);
 			break;
 
-		case R.id.img_budgetrelease:
-			Toast.makeText(getApplicationContext(), "BUDGETRELEASE",
-					Toast.LENGTH_LONG).show();
-
->>>>>>> branch_mon
-			break;
 		case R.id.img_budget101:
 			Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG)
 					.show();
