@@ -354,9 +354,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			break;
 		
 		case R.id.img_saob:
-			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG).show();
-			Intent k  = new Intent(this, SAOBActivity.class);
-			startActivity(k);
+			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG)
+			.show();
+			Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+			intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+			startActivityForResult(intent, 0);
+			Toast.makeText(getApplicationContext(), "ABOUT", Toast.LENGTH_LONG).show();
 			break;
 			
 		case R.id.img_budgetrelease:
@@ -365,16 +368,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			Toast.makeText(getApplicationContext(), "BUDGETRELEASE", Toast.LENGTH_LONG).show();
 			break;
 		case R.id.img_budget101:
-			Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG).show();
+			Intent l  = new Intent(this, BudgetInfoActivity.class);
+			startActivity(l);
 			break;
 			
 		case R.id.img_about:
-			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG)
-			.show();
-			Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-			intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-			startActivityForResult(intent, 0);
-			Toast.makeText(getApplicationContext(), "ABOUT", Toast.LENGTH_LONG).show();
+			Intent m  = new Intent(this, AboutUsActivity.class);
+			startActivity(m);
 			break;
 
 		}

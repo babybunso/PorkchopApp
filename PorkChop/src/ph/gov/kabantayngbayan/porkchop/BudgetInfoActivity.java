@@ -95,7 +95,7 @@ public class BudgetInfoActivity extends FragmentActivity{
         @Override
         public int getCount() {
         	
-             return 25;
+             return pictures.length;
         }
 
         @Override
