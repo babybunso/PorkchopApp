@@ -76,6 +76,8 @@
            		 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
          <activity android:name="AboutUsActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
          <activity android:name="BudgetInfoActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+         <activity android:name="SAOBAgencyActivity"
+             	 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
     </application>
 
 </manifest>

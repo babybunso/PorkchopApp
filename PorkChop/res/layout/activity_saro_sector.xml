@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.20"
             android:gravity="center"
-            android:text="SARO BY SECTOR"
+            android:text="Budget Allotment"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#000000" />
     </LinearLayout>
@@ -26,17 +26,26 @@
         android:id="@+id/lay_regionmap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:paddingTop="10dp"
         android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Sector"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </LinearLayout>
 
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="434dp"
         android:layout_weight="1"
-        android:numColumns="3">
+        android:numColumns="3" >
 
     </GridView>
 

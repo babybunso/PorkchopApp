@@ -346,20 +346,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		case R.id.img_menu:
 			layMenuItems.setVisibility(layMenuItems.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
 			break;
-			
-		case R.id.img_diy:
-			Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG).show();
-			Intent i  = new Intent(this, BudgetReleaseActivity.class);
-			startActivity(i);
-			break;
-		
+
 		case R.id.img_saob:
-			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG)
-			.show();
-			Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-			intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-			startActivityForResult(intent, 0);
-			Toast.makeText(getApplicationContext(), "ABOUT", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG).show();
+			Intent k  = new Intent(this, SAOBAgencyActivity.class);
+			startActivity(k);
 			break;
 			
 		case R.id.img_budgetrelease:

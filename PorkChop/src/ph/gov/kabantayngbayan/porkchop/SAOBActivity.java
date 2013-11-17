@@ -67,7 +67,10 @@ public class SAOBActivity extends Activity{
 	
 	
 
-
+	
+	
+	
+	
 	//TODO transfer to SARODETAILS
 	private List<Saro> getSaroRegion() {
 		ArrayList<Saro> items = new ArrayList<Saro>();
