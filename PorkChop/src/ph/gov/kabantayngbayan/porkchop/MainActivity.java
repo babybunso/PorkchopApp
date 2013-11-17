@@ -98,7 +98,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		layMenuItems = (LinearLayout) findViewById(R.id.lay_menu_items);
 		findViewById(R.id.img_menu).setOnClickListener(this);
 		findViewById(R.id.img_diy).setOnClickListener(this);
-		findViewById(R.id.img_taxdistrib).setOnClickListener(this);
+		findViewById(R.id.img_saob).setOnClickListener(this);
 		findViewById(R.id.img_budgetrelease).setOnClickListener(this);
 		findViewById(R.id.img_budget101).setOnClickListener(this);
 		findViewById(R.id.img_about).setOnClickListener(this);
@@ -351,26 +351,39 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			layMenuItems.setVisibility(layMenuItems.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
 			break;
 
-
-		case R.id.img_taxdistrib:
-			startActivity(new Intent(this, TaxDistActivity.class));
-			break;
-			
 		case R.id.img_diy:
+			Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG).show();
 			i = new Intent(this, DIYActivity.class);
+
 			startActivity(i);
 			break;
 
+		case R.id.img_saob:
+			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG).show();
+			Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+			intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+			startActivityForResult(intent, 0);
+			break;
+
+		case R.id.img_budgetrelease:
+			Toast.makeText(getApplicationContext(), "BUDGETRELEASE", Toast.LENGTH_LONG).show();
+
+			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG)
+					.show();
+			i = new Intent("com.google.zxing.client.android.SCAN");
+			i.putExtra("SCAN_MODE", "QR_CODE_MODE");
+			startActivityForResult(i, 0);
+			break;
+
 		case R.id.img_budget101:
-			startActivity(new Intent(this, BudgetInfoActivity.class));
+			Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG)
+					.show();
+			startActivity(new Intent(this, TaxDistActivity.class));
 			break;
 
 		case R.id.img_about:
-			startActivity(new Intent(this, AboutUsActivity.class));
-			break;
-		
-		case R.id.img_budgetrelease:
-			//startActivity(new Intent(this, AboutUsActivity.class));
+			Toast.makeText(getApplicationContext(), "ABOUT", Toast.LENGTH_LONG)
+					.show();
 			break;
 
 		}
