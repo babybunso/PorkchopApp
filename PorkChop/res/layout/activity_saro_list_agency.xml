@@ -43,7 +43,7 @@
             android:src="@drawable/agency_civil_service_commission" />
 
         <TextView
-            android:id="@+id/txt_version"
+            android:id="@+id/txt_sectorname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

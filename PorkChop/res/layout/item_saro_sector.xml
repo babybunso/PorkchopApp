@@ -3,7 +3,7 @@
     android:layout_width="150dp"
     android:layout_height="150dp"
     android:layout_margin="10dp"
-    android:padding="15dp"
+    android:padding="5dp"
     android:orientation="vertical">
 
     <ImageView
@@ -17,6 +17,16 @@
 
     <!-- paddingLeftTest-->
 
- 
+	   <TextView
+	       android:id="@+id/txt_sectorname"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignRight="@+id/img_item"
+	       android:layout_below="@+id/img_item"
+	       android:layout_marginRight="18dp"
+	       android:textColor="#000000"
+	       android:text="Small Text"
+	       android:gravity="center"
+	       android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

@@ -342,39 +342,39 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 		switch (v.getId()) {
 
-		case R.id.img_menu:
-			layMenuItems
-					.setVisibility(layMenuItems.getVisibility() == View.VISIBLE ? View.GONE
-							: View.VISIBLE);
-			break;
 
+		case R.id.img_menu:
+			layMenuItems.setVisibility(layMenuItems.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+			break;
+			
 		case R.id.img_diy:
-			Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG)
-					.show();
-			Intent i = new Intent(this, BudgetReleaseActivity.class);
+			Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG).show();
+			Intent i  = new Intent(this, BudgetReleaseActivity.class);
 			startActivity(i);
 			break;
-
+		
 		case R.id.img_saob:
+			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG).show();
+			Intent k  = new Intent(this, SAOBActivity.class);
+			startActivity(k);
+			break;
+			
+		case R.id.img_budgetrelease:
+			Intent j  = new Intent(this, BudgetReleaseSectorActivity.class);
+			startActivity(j);
+			Toast.makeText(getApplicationContext(), "BUDGETRELEASE", Toast.LENGTH_LONG).show();
+			break;
+		case R.id.img_budget101:
+			Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG).show();
+			break;
+			
+		case R.id.img_about:
 			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG)
-					.show();
+			.show();
 			Intent intent = new Intent("com.google.zxing.client.android.SCAN");
 			intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
 			startActivityForResult(intent, 0);
-			break;
-
-		case R.id.img_budgetrelease:
-			Toast.makeText(getApplicationContext(), "BUDGETRELEASE",
-					Toast.LENGTH_LONG).show();
-			break;
-		case R.id.img_budget101:
-			Intent x = new Intent(this, BudgetInfoActivity.class);
-			startActivity(x);
-			break;
-
-		case R.id.img_about:
-			Intent y = new Intent(this, AboutUsActivity.class);
-			startActivity(y);
+			Toast.makeText(getApplicationContext(), "ABOUT", Toast.LENGTH_LONG).show();
 			break;
 
 		}
@@ -415,6 +415,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			} else if (resultCode == RESULT_CANCELED) {
 				// Handle cancel
 			}
+
 		}
 	}
 
