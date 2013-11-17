@@ -16,9 +16,14 @@ import ph.gov.kabantayngbayan.porkchop.utils.ByCategoryDataUtil;
 import ph.gov.kabantayngbayan.porkchop.utils.GraphManager;
 import ph.gov.kabantayngbayan.porkchop.utils.VerticalSeekBar;
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+=======
+import android.view.View.OnClickListener;
+>>>>>>> branch_mon
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
@@ -116,6 +121,17 @@ public class TaxDistActivity extends Activity {
 			public void onNothingSelected(AdapterView<?> arg0) {
 				// TODO Auto-generated method stub
 
+			}
+		});
+		
+		mBtnTaxCalc.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				String url = "http://www.sweldongpinoy.com/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);
 			}
 		});
 
