@@ -4,20 +4,26 @@
 package ph.gov.kabantayngbayan.porkchop;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.List;
+
+import org.achartengine.GraphicalView;
 
 import ph.gov.kabantayngbayan.porkchop.db.SectorDatasource;
 import ph.gov.kabantayngbayan.porkchop.models.Particular;
 import ph.gov.kabantayngbayan.porkchop.models.PieChartModel;
 import ph.gov.kabantayngbayan.porkchop.utils.ByCategoryDataUtil;
+import ph.gov.kabantayngbayan.porkchop.utils.GraphManager;
 import ph.gov.kabantayngbayan.porkchop.utils.VerticalSeekBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Spinner;
@@ -43,6 +49,9 @@ public class TaxDistActivity extends Activity {
 
 	private String[] mCategories = { "Expense Class", "Specific Agency",
 			"Sector" };
+	
+	private LinearLayout ll_graph;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -50,13 +59,20 @@ public class TaxDistActivity extends Activity {
 		setContentView(R.layout.activity_taxdist);
 
 		mSeekBar = (VerticalSeekBar) findViewById(R.id.seekBar);
-		mTvAmount = (TextView) findViewById(R.id.txt_progcode);
+		mTvAmount = (TextView) findViewById(R.id.tv_tax_amount);
 		mTvDetails = (TextView) findViewById(R.id.tv_details);
 		mSpinner = (Spinner) findViewById(R.id.sp_category);
 		mBtnTaxCalc = (Button) findViewById(R.id.btn_tax_calculator);
+		
+		ll_graph = (LinearLayout) findViewById(R.id.ll_graph);
+
 
 		// Initialize contents
 		mSeekBar.setMax(50000);
+		mSeekBar.setProgress(25000);
+		mTaxAmount = 25000;
+
+		
 
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, mCategories);
@@ -108,6 +124,8 @@ public class TaxDistActivity extends Activity {
 	private void setTax() {
 		mSeekBar.setProgress(mTaxAmount);
 		mTvAmount.setText(String.format(kTaxPHP, mTaxAmount));
+		
+		
 		switch (mSelectedCategory) {
 		case 0:
 			mTvDetails.setText(getExpenseString(mTaxAmount));
@@ -121,12 +139,13 @@ public class TaxDistActivity extends Activity {
 		default:
 			break;
 		}
-
+				
 	}
 
 	private String getSectorString(int amount) {
 		SectorDatasource data = new SectorDatasource();
 		List<Particular> particulars = data.getParticulars();
+		List<PieChartModel> models = new ArrayList<PieChartModel>();
 
 		StringBuilder sBuilder = new StringBuilder();
 
@@ -141,8 +160,12 @@ public class TaxDistActivity extends Activity {
 			double total = amount * particular.getPercentShare() / 100;
 			sBuilder.append(format.format(total));
 			sBuilder.append("\n");
+			
+			PieChartModel model = new PieChartModel(particular.getName(), particular.getPercentShare());
+			models.add(model);
 		}
 
+		creatYourBudgetChart(models);
 		return sBuilder.toString();
 	}
 
@@ -173,6 +196,7 @@ public class TaxDistActivity extends Activity {
 			sBuilder.append("\n");
 		}
 
+		creatYourBudgetChart(models);
 		return sBuilder.toString();
 	}
 
@@ -203,7 +227,36 @@ public class TaxDistActivity extends Activity {
 			sBuilder.append("\n");
 		}
 
+		creatYourBudgetChart(models);
 		return sBuilder.toString();
+	}
+
+	private void creatYourBudgetChart(List<PieChartModel> pcModel) {
+
+		GraphManager g = new GraphManager();
+		GraphicalView gView = g.getPieChartView(this, pcModel, "", false,
+					false, false, false, false);
+			
+		setGRenderer(g);
+
+		try{
+			ll_graph.removeViewAt(0);
+			gView.repaint();		
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		ll_graph.addView(gView, new LayoutParams(
+				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+
+	}
+	
+	private void setGRenderer(GraphManager g) {
+		g.mRenderer.setInScroll(true);
+		g.mRenderer.setChartTitleTextSize(40);
+		g.mRenderer.setLabelsTextSize(18);
+		g.mRenderer.setMargins(new int[]{0,0,0,0});
 	}
 
 }

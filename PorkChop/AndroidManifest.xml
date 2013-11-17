@@ -51,7 +51,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBHDN2_lq1AC14-mulSxBEZfaFwJbJNYYQ" />
+            android:value="AIzaSyDd6NXPqQJ3JSuc3-uIWxcaCAN3eDPvOds" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -68,14 +68,10 @@
             android:name="BudgetReleaseDetailsActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
-        <activity android:name="BudgetReleaseSectorActivity"
-           		 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-        <activity android:name="BudgetReleaseSectorPopActivity"
-           		 android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></activity>
-         <activity android:name="SAOBActivity"
-           		 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-         <activity android:name="AboutUsActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-         <activity android:name="BudgetInfoActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name="TaxDistActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
     </application>
 
 </manifest>
