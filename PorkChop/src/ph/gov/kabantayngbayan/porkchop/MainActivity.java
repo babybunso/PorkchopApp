@@ -126,8 +126,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 			@Override
 			public void onMapClick(LatLng arg0) {
-				Toast.makeText(getApplicationContext(), pointInRegion(arg0),
-						Toast.LENGTH_SHORT).show();
+				if (pointInRegion(arg0) != null) {
+					Intent i = new Intent(MainActivity.this,
+							BudgetReleaseActivity.class);
+					i.putExtra("region", pointInRegion(arg0));
+					startActivity(i);
+				}
 			}
 		});
 
@@ -340,6 +344,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 
+		Intent i;
 		switch (v.getId()) {
 
 		case R.id.img_menu:
@@ -351,21 +356,22 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		case R.id.img_diy:
 			Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG)
 					.show();
-			Intent i = new Intent(this, BudgetReleaseActivity.class);
+			i = new Intent(this, DIYActivity.class);
 			startActivity(i);
 			break;
 
 		case R.id.img_saob:
 			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG)
 					.show();
-			Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-			intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-			startActivityForResult(intent, 0);
+			i = new Intent("com.google.zxing.client.android.SCAN");
+			i.putExtra("SCAN_MODE", "QR_CODE_MODE");
+			startActivityForResult(i, 0);
 			break;
 
 		case R.id.img_budgetrelease:
 			Toast.makeText(getApplicationContext(), "BUDGETRELEASE",
 					Toast.LENGTH_LONG).show();
+
 			break;
 		case R.id.img_budget101:
 			Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG)

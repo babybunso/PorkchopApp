@@ -46,8 +46,39 @@ public class BudgetReleaseActivity extends Activity{
 	private void initialize() {
 		imgMap = (ImageView) findViewById(R.id.img_map);
 		gridView = (GridView) findViewById(R.id.gridview);
-		int region = getIntent().getIntExtra("region", R.drawable.region_05);
-		imgMap.setImageResource(region);
+		String region = getIntent().getStringExtra("region");
+		int regionImage = 0;
+		
+		if (region.equals("1")) { 
+			regionImage = R.drawable.region_01;
+		} else if (region.equals("2")) { 
+			regionImage = R.drawable.region_02;
+		} else if (region.equals("3")) { 
+			regionImage = R.drawable.region_03;
+		} else if (region.equals("4")) { 
+			regionImage = R.drawable.region_04;
+		} else if (region.equals("5")) { 
+			regionImage = R.drawable.region_05;
+		} else if (region.equals("6")){ 
+			regionImage = R.drawable.region_06;
+		} else if (region.equals("7")) { 
+			regionImage = R.drawable.region_07;
+		} else if (region.equals("8")) { 
+			regionImage = R.drawable.region_08;
+		} else if (region.equals("9")) { 
+			regionImage = R.drawable.region_09;
+		} else if (region.equals("10")) { 
+			regionImage = R.drawable.region_10;
+		} else if (region.equals("11") ){ 
+			regionImage = R.drawable.region_11;
+		} else if (region.equals("12")) { 
+			regionImage = R.drawable.region_12;
+		} else if (region.equals("CAR")) { 
+			regionImage = R.drawable.region_car;
+		} else if (region.equals("Manila")) { 
+			regionImage = R.drawable.region_ncr;
+		}
+		imgMap.setImageResource(regionImage);
 		setList();
 	}
 	
