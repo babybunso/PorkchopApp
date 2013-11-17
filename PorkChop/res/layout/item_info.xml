@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.aimopp.utils.TouchImageView
+    <ph.gov.kabantayngbayan.porkchop.utils.TouchImageView
         android:id="@+id/img_carousel"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

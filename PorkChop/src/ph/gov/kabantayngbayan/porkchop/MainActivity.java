@@ -368,13 +368,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 					Toast.LENGTH_LONG).show();
 			break;
 		case R.id.img_budget101:
-			Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG)
-					.show();
+			Intent x = new Intent(this, BudgetInfoActivity.class);
+			startActivity(x);
 			break;
 
 		case R.id.img_about:
-			Toast.makeText(getApplicationContext(), "ABOUT", Toast.LENGTH_LONG)
-					.show();
+			Intent y = new Intent(this, AboutUsActivity.class);
+			startActivity(y);
 			break;
 
 		}

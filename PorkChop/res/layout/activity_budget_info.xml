@@ -16,7 +16,7 @@
             android:id="@+id/txt_progcode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BudgetInfo"
+            android:text="Budget 101"
             android:textColor="#000000"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 

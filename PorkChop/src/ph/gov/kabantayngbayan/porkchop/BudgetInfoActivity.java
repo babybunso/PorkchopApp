@@ -14,7 +14,33 @@ import android.view.ViewGroup;
 public class BudgetInfoActivity extends FragmentActivity{
 
 	//BUDGET101
-	private int[] pics = {};
+	private int[] pics = {
+			R.drawable.budget_01,
+			R.drawable.budget_02,
+			R.drawable.budget_03,
+			R.drawable.budget_04,
+			R.drawable.budget_05,
+			R.drawable.budget_06,
+			R.drawable.budget_07,
+			R.drawable.budget_08,
+			R.drawable.budget_09,
+			R.drawable.budget_10,
+			R.drawable.budget_11,
+			R.drawable.budget_12,
+			R.drawable.budget_13,
+			R.drawable.budget_14,
+			R.drawable.budget_15,
+			R.drawable.budget_16,
+			R.drawable.budget_17,
+			R.drawable.budget_18,
+			R.drawable.budget_19,
+			R.drawable.budget_20,
+			R.drawable.budget_21,
+			R.drawable.budget_22,
+			R.drawable.budget_23,
+			R.drawable.budget_24,
+			R.drawable.budget_25,
+	};
 	private ViewPager pager;
 	
 	@Override
@@ -69,7 +95,7 @@ public class BudgetInfoActivity extends FragmentActivity{
         @Override
         public int getCount() {
         	
-             return pictures.length;
+             return 25;
         }
 
         @Override
