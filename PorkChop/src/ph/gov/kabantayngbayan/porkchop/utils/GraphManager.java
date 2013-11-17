@@ -21,7 +21,8 @@ public class GraphManager {
 	// The main renderer for the main dataset.
 	public DefaultRenderer mRenderer = new DefaultRenderer();
 
-	public GraphicalView getPieChartView(Context context, List<PieChartModel> pies, String title, boolean showZoomButton, boolean zoomEnable, boolean showLegend, boolean isPanEnable) {
+	public GraphicalView getPieChartView(Context context, List<PieChartModel> pies, String title, 
+			boolean showZoomButton, boolean zoomEnable, boolean showLegend, boolean isPanEnable, boolean setBackgroundColor) {
 
 		mRenderer.setZoomButtonsVisible(showZoomButton);
 		mRenderer.setStartAngle(180);
@@ -44,7 +45,7 @@ public class GraphManager {
 		//mRenderer.getSeriesRendererAt(maxPos).setHighlighted(true);
 		mRenderer.setBackgroundColor(Color.rgb(251, 197, 50));
 		//mRenderer.setMargins(new int[] { 0, 0, 50, 50 });
-		mRenderer.setApplyBackgroundColor(true);
+		mRenderer.setApplyBackgroundColor(setBackgroundColor);
 
 		return ChartFactory.getPieChartView(context, mSeries, mRenderer);
 	}

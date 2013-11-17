@@ -328,6 +328,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		
+		Intent i;
+		
 		switch (v.getId()) {
 		
 			case R.id.img_menu:
@@ -336,7 +338,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 				
 			case R.id.img_diy:
 				Toast.makeText(getApplicationContext(), "DIY", Toast.LENGTH_LONG).show();
-				Intent i  = new Intent(this, BudgetReleaseActivity.class);
+				i  = new Intent(this, DIYActivity.class);
 				startActivity(i);
 				break;
 			
@@ -346,6 +348,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 				
 			case R.id.img_budgetrelease:
 				Toast.makeText(getApplicationContext(), "BUDGETRELEASE", Toast.LENGTH_LONG).show();
+				i  = new Intent(this, BudgetReleaseActivity.class);
+				startActivity(i);
 				break;
 			case R.id.img_budget101:
 				Toast.makeText(getApplicationContext(), "101", Toast.LENGTH_LONG).show();

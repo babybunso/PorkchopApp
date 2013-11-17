@@ -75,23 +75,23 @@ public class PagesFragment extends Fragment {
 			pies.add(p);
 			
 			mChartViewExpenseClass = new GraphManager().getPieChartView(getActivity(), 
-					(expenseClass.size()>0) ? expenseClass : pies, BY_EXPENSE_CLASS, false, false, false, false);
+					(expenseClass.size()>0) ? expenseClass : pies, BY_EXPENSE_CLASS, false, false, false, false, true);
 			mChartViewRecipientUnit = new GraphManager().getPieChartView(getActivity(), 
-					(recipientUnits.size()>0) ? recipientUnits : pies, BY_RECIPIENT_UNIT, false, false, false, false);
+					(recipientUnits.size()>0) ? recipientUnits : pies, BY_RECIPIENT_UNIT, false, false, false, false, true);
 			mChartViewSector = new GraphManager().getPieChartView(getActivity(), 
-					(sectors.size()>0) ? sectors : pies, BY_SECTOR, false, false, false, false);
+					(sectors.size()>0) ? sectors : pies, BY_SECTOR, false, false, false, false, true);
 			mChartViewRegion = new GraphManager().getPieChartView(getActivity(), 
-					(regions.size()>0) ? regions : pies, BY_REGION, false, false, false, false);
+					(regions.size()>0) ? regions : pies, BY_REGION, false, false, false, false, true);
 		
 			
 		} else {
 			PieChartModel p = new PieChartModel("NO DATA", -1);
 			pies.add(p);
 			
-			mChartViewExpenseClass = new GraphManager().getPieChartView(getActivity(), pies, BY_EXPENSE_CLASS, false, false, false, false);
-			mChartViewRecipientUnit = new GraphManager().getPieChartView(getActivity(), pies, BY_RECIPIENT_UNIT, false, false, false, false);
-			mChartViewSector = new GraphManager().getPieChartView(getActivity(), pies, BY_SECTOR, false, false, false, false);
-			mChartViewRegion = new GraphManager().getPieChartView(getActivity(), pies, BY_REGION, false, false, false, false);
+			mChartViewExpenseClass = new GraphManager().getPieChartView(getActivity(), pies, BY_EXPENSE_CLASS, false, false, false, false, true);
+			mChartViewRecipientUnit = new GraphManager().getPieChartView(getActivity(), pies, BY_RECIPIENT_UNIT, false, false, false, false, true);
+			mChartViewSector = new GraphManager().getPieChartView(getActivity(), pies, BY_SECTOR, false, false, false, false, true);
+			mChartViewRegion = new GraphManager().getPieChartView(getActivity(), pies, BY_REGION, false, false, false, false, true);
 
 		}
 		

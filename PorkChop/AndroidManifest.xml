@@ -57,6 +57,8 @@
             	  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity android:name="BudgetReleaseDetailsActivity"
             	  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="DIYActivity"
+            	  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
     </application>
 
 </manifest>
