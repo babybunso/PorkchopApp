@@ -2,9 +2,12 @@
 package ph.gov.kabantayngbayan.porkchop;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import ph.gov.kabantayngbayan.porkchop.db.BudgetAutoApproDataSource;
 import ph.gov.kabantayngbayan.porkchop.db.DBHelper;
+import ph.gov.kabantayngbayan.porkchop.models.BudgetAutoAppro;
+import ph.gov.kabantayngbayan.porkchop.models.BudgetNewAppro;
 import ph.gov.kabantayngbayan.porkchop.utils.AgencyItem;
 import ph.gov.kabantayngbayan.porkchop.utils.AgencyLogoUtil;
 import android.app.Activity;
@@ -70,17 +73,29 @@ public class SAOBAgencyActivity extends Activity{
 	}
 
 	//TODO transfer to SARODETAILS
-	private ArrayList<AgencyItem> getSaroRegion(String agencyName) {
-		
+	private List<BudgetAutoAppro> getBudgetAutoAppro(String agencyName) {
+		List<BudgetAutoAppro> appros;
 		BudgetAutoApproDataSource autoAppro = new BudgetAutoApproDataSource(getApplicationContext());
 		autoAppro.open();
-		autoAppro.getByParameter(DBHelper.COL_TBL_BUDGET_APPRO_DEPARTMENT_CODE + "='" + agencyName + "'");
+		appros = autoAppro.getByParameter(DBHelper.COL_TBL_BUDGET_APPRO_DEPARTMENT_CODE + "='" + agencyName + "'");
 		autoAppro.close();
-		return null;
+		return appros;
 	
 	}
 	
+
+	//TODO transfer to SARODETAILS
+/*	private List<BudgetNewAppro> getBudgetNewAppro(String agencyName) {
+		List<BudgetNewAppro> appros;
+		BudgetAutoApproDataSource autoAppro = new BudgetAutoApproDataSource(getApplicationContext());
+		autoAppro.open();
+		appros = autoAppro.getByParameter(DBHelper.COL_TBL_BUDGET_APPRO_DEPARTMENT_CODE + "='" + agencyName + "'");
+		autoAppro.close();
+		
+		List<Programs> p = appros.get(0).getPrograms();
+		return appros;
 	
+	}*/
 	
 	
 	private class BudgetReleaseListAdapter extends ArrayAdapter<AgencyItem> implements OnItemClickListener, Filterable {

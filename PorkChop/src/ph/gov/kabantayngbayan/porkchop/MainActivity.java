@@ -98,7 +98,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		layMenuItems = (LinearLayout) findViewById(R.id.lay_menu_items);
 		findViewById(R.id.img_menu).setOnClickListener(this);
 		findViewById(R.id.img_diy).setOnClickListener(this);
-		findViewById(R.id.img_saob).setOnClickListener(this);
+		findViewById(R.id.img_taxdistrib).setOnClickListener(this);
 		findViewById(R.id.img_budgetrelease).setOnClickListener(this);
 		findViewById(R.id.img_budget101).setOnClickListener(this);
 		findViewById(R.id.img_about).setOnClickListener(this);
@@ -126,8 +126,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 			@Override
 			public void onMapClick(LatLng arg0) {
-				Toast.makeText(getApplicationContext(), pointInRegion(arg0),
-						Toast.LENGTH_SHORT).show();
+				if (pointInRegion(arg0) != null) {
+					Intent i = new Intent(MainActivity.this,
+							BudgetReleaseActivity.class);
+					i.putExtra("region", pointInRegion(arg0));
+					startActivity(i);
+				}
 			}
 		});
 
@@ -340,32 +344,33 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 
+		Intent i;
 		switch (v.getId()) {
-
 
 		case R.id.img_menu:
 			layMenuItems.setVisibility(layMenuItems.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
 			break;
 
-		case R.id.img_saob:
-			Toast.makeText(getApplicationContext(), "SAOB", Toast.LENGTH_LONG).show();
-			Intent k  = new Intent(this, SAOBAgencyActivity.class);
-			startActivity(k);
+
+		case R.id.img_taxdistrib:
+			startActivity(new Intent(this, TaxDistActivity.class));
 			break;
 			
-		case R.id.img_budgetrelease:
-			Intent j  = new Intent(this, BudgetReleaseSectorActivity.class);
-			startActivity(j);
-			Toast.makeText(getApplicationContext(), "BUDGETRELEASE", Toast.LENGTH_LONG).show();
+		case R.id.img_diy:
+			i = new Intent(this, DIYActivity.class);
+			startActivity(i);
 			break;
+
 		case R.id.img_budget101:
-			Intent l  = new Intent(this, BudgetInfoActivity.class);
-			startActivity(l);
+			startActivity(new Intent(this, BudgetInfoActivity.class));
 			break;
-			
+
 		case R.id.img_about:
-			Intent m  = new Intent(this, AboutUsActivity.class);
-			startActivity(m);
+			startActivity(new Intent(this, AboutUsActivity.class));
+			break;
+		
+		case R.id.img_budgetrelease:
+			//startActivity(new Intent(this, AboutUsActivity.class));
 			break;
 
 		}
@@ -406,7 +411,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			} else if (resultCode == RESULT_CANCELED) {
 				// Handle cancel
 			}
-
 		}
 	}
 

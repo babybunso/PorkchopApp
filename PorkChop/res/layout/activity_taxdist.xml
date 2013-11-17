@@ -65,7 +65,7 @@
             <LinearLayout
                 android:id="@+id/ll_graph"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="260dp"
                 android:layout_below="@+id/sp_category"
                 android:orientation="vertical" >
             </LinearLayout>

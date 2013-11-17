@@ -64,23 +64,24 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:visibility="invisible"
-            android:weightSum="5" >
+            android:weightSum="6" >
 
             <ImageView
                 android:id="@+id/img_diy"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/sel_diy" />
 
             <ImageView
-                android:id="@+id/img_saob"
+                android:id="@+id/img_taxdistrib"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:src="@drawable/sel_saob" />
+                android:src="@drawable/sel_tax_distribution" />
 
             <ImageView
                 android:id="@+id/img_budgetrelease"
@@ -89,6 +90,14 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/sel_budget_release" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/sel_search" />
 
             <ImageView
                 android:id="@+id/img_budget101"

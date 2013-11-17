@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="HEALTH (48 %)"
+        android:text="HEALTH"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -21,7 +21,7 @@
         android:layout_below="@id/tv_sector_percent"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="4000000000"
+        android:text="100%"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <SeekBar
